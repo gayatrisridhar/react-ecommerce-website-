@@ -26,3 +26,6 @@ function App() {
 }
 
 export default App;
+
+//notes
+// switch is used here so that it stops looking for other routes once it has found the first match

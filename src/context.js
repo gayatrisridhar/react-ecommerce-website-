@@ -1,9 +1,14 @@
+//the main purpose of contet is to make the data available to
+//different components at different nesting levels.
+//note: to use productprovider and productconsumer anywhere in the
+//projrct place it at the very top.
 import React, { Component } from "react";
 import { storeProducts, detailProduct } from "./data";
 
 const ProductContext = React.createContext();
-//Provider
-//Consumer
+//ceateContext has 2 parametes as follows
+//1)Provider:provides all the information
+//2)Consumer:when we need to use the information
 
 class ProductProvider extends Component {
   state = {

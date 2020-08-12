@@ -6,9 +6,9 @@ export default function CartTotals({ value, history }) {
   const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
   return (
     <React.Fragment>
-      <div className="container">
-        <div className="row">
-          <div className="col-10 mt-2 ml-5 ml-md-auto ml-sm-5 col-sm-8 text-capitalize text-right">
+      <div className="float-right nowrap ">
+        <div className="row ">
+          <div className="col-10  text-capitalize text-right ">
             <Link to="/">
               <button
                 className="btn btn-outline-danger text-uppercase mb-3 px-5"
@@ -19,19 +19,19 @@ export default function CartTotals({ value, history }) {
               </button>
             </Link>
             <h5>
-              <span className="text-title">
+              <span className="new-cl nowrap ">
                 subtotal:
                 <strong>$ {cartSubTotal}</strong>
               </span>
             </h5>
             <h5>
-              <span className="text-title">
+              <span className="new-cl">
                 tax:
                 <strong>$ {cartTax}</strong>
               </span>
             </h5>
             <h5>
-              <span className="text-title">
+              <span className="new-cl">
                 total:
                 <strong>$ {cartTotal}</strong>
               </span>

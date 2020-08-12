@@ -9,7 +9,7 @@ export default class Productlist extends Component {
     products: storeProducts,
   };
   render() {
-    console.log(this.state.products);
+    // console.log(this.state.products);
     return (
       <React.Fragment>
         <div className="py-5">

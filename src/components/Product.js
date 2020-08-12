@@ -41,8 +41,17 @@ export default class h3 extends Component {
           </ProductConsumer>
 
           {/* card footer */}
+
           <div className="card-footer d-flex justify-content-between">
-            <p className="align-self-center mb-0">{title}</p>
+            <ProductConsumer>
+              {(value) => (
+                <div onClick={() => value.handleDetail(id)}>
+                  <Link to="/details">
+                    <p className="align-self-center mb-0">{title}</p>
+                  </Link>
+                </div>
+              )}
+            </ProductConsumer>
             <h5 className="text-blue font-italic mb-0">
               <span className="mr-1">$</span>
               {price}

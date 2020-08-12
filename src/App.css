@@ -18,6 +18,12 @@ body {
   text-transform: uppercase;
 }
 
+.new-cl {
+  font-family: "Oswald", sans-serif !important;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+
 .text-blue {
   color: var(--mainBlue);
 }
